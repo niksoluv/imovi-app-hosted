@@ -1,0 +1,15 @@
+.body{
+	grid-area: c;
+	background-color: rgb(255, 204, 204);
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.flexbox-container {
+	display: flex;
+	flex-direction: row;
+}
+
+
+
