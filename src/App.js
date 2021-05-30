@@ -12,8 +12,8 @@ function App() {
 			<div className='app-wrapper'>
 				<Header />
 				<div>
-				<Route path='/' component={()=><Body/>} />
-				<Route path='/details' component={Details} />
+				<Route exact path='/' component={()=><Body/>} />
+				<Route exact path='/details' component={Details} />
 				</div>
 				<footer className='footer'>footer</footer>
 			</div>
