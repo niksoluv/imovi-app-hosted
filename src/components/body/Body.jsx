@@ -14,7 +14,11 @@ class Body extends React.Component {
 
 	componentDidMount() {
 		const url = 'https://api.themoviedb.org/3/movie/popular?api_key=30c4ec1f7ead936d610a56b54bc4bbd4&language=en-US'
-		fetch(url)
+		fetch(url, {
+			headers: {
+				'permissions-policy': 'interest-cohort=()'
+			}
+		})
 			.then((response) => response.json())
 			.then(result => {
 				this.setState({
